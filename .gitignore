@@ -17,3 +17,14 @@
 
 # ImageProcessor DiskCache 
 **/App_Data/cache/
+/src/packages/*
+*.suo
+/src/.vs/*
+/src/Umbraco.IoC.Autofac/bin/*
+/src/Umbraco.IoC.Autofac/obj/*
+/src/Umbraco.IoC.WebTest/bin/*
+/src/Umbraco.IoC.WebTest/App_Data/Umbraco.sdf
+/src/Umbraco.IoC.WebTest/App_Data/Models/*
+/src/Umbraco.IoC.WebTest/obj/*
+/src/Umbraco.IoC/bin/*
+/src/Umbraco.IoC/obj/*
