@@ -32,6 +32,10 @@ If you want to disable this container's support you can do so by setting this ap
 <add key="Our.Umbraco.IoC.LightInject.Enabled" value="false" />
 ```
 
+## Using the container
+
+I'll write this up soon but in the meantime you can see examples on this blog post: https://shazwazza.com/post/easily-setup-your-umbraco-installation-with-ioc-dependency-injection/
+
 ## Contributing
 
 Contribution is fairly easy for this project. You should be able to clone the repository and build the solution which should install all nuget dependencies and then you can run the website which will execute the Umbraco installer.
