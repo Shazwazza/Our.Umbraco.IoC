@@ -27,7 +27,7 @@ namespace Our.Umbraco.IoC.LightInject
         public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
             //If this flag exists and it's not 'true' then this container will be disabled.
-            if (ConfigurationManager.AppSettings["Our.Umbraco.IoC.LightInject.Enabled"] != null && ConfigurationManager.AppSettings["Umbraco.IoC.LightInject.Enabled"] != "true")
+            if (ConfigurationManager.AppSettings["Our.Umbraco.IoC.LightInject.Enabled"] != null && ConfigurationManager.AppSettings["Our.Umbraco.IoC.LightInject.Enabled"] != "true")
                 return;
 
             var container = new ServiceContainer();

@@ -13,11 +13,12 @@
         <copyright>$copyright$</copyright>
         <tags>Umbraco IoC DependencyInjection DI LightInject</tags>
         <dependencies>
-            <dependency id="UmbracoCms.Core" version="7.7.0" />
-            <dependency id="LightInject" version="5.1.1" />
-            <dependency id="LightInject.Mvc" version="2.0.0" />
-            <dependency id="LightInject.Web" version="2.0.0" />
-            <dependency id="LightInject.WebApi" version="2.0.0" />
+            <dependency id="Our.Umbraco.IoC" version="1.0.0-beta" />
+            <dependency id="UmbracoCms.Core" version="[7.7.0,8.0.0)" />
+            <dependency id="LightInject" version="[5.1.1,6.0.0)" />
+            <dependency id="LightInject.Mvc" version="[2.0.0,3.0.0)" />
+            <dependency id="LightInject.Web" version="[2.0.0,3.0.0)" />
+            <dependency id="LightInject.WebApi" version="[2.0.0,3.0.0)" />
         </dependencies>
     </metadata>    
     <files>

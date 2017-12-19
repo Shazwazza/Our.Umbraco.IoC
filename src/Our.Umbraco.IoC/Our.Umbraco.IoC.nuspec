@@ -13,7 +13,7 @@
         <copyright>$copyright$</copyright>
         <tags>Umbraco IoC DependencyInjection DI</tags>
         <dependencies>
-            <dependency id="UmbracoCms.Core" version="7.7.0" />
+            <dependency id="UmbracoCms.Core" version="[7.7.0,8.0.0)" />
         </dependencies>
     </metadata>    
     <files>

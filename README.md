@@ -49,3 +49,7 @@ Then you need to get these registrations into your container type and this will 
 * LightInject - `Our.Umbraco.IoC.Autofac.LightInjectUmbracoRegister` which uses LightInject's `ICompositionRoot` to register components
 
 Each project should be structured consistently with the existing ones, it's only a few classes to get a new container going.
+
+__Important!__ Most of these registrations are Externally Owned, meaning Umbraco owns the lifetime of the objects. When you are building the code for your container, you need
+to make sure that if an `IContainerRegistration`'s lifetime is `ExternallyOwned` that you deal with that accordingly. Most containers will have a way that you can define this
+so that the container doesn't Dispose of the object itself.
