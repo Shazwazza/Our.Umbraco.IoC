@@ -28,3 +28,6 @@
 /src/Umbraco.IoC.WebTest/obj/*
 /src/Umbraco.IoC/bin/*
 /src/Umbraco.IoC/obj/*
+/src/Umbraco.IoC.LightInject/bin/*
+/src/Umbraco.IoC.LightInject/obj/*
+/src/Umbraco.IoC.WebTest/Umbraco.IoC.WebTest.csproj.user

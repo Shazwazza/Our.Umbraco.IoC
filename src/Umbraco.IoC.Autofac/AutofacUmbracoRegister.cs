@@ -16,10 +16,10 @@ namespace Umbraco.IoC.Autofac
     /// </summary>
     public class AutofacUmbracoRegister : IRegistrationSource
     {
-        private readonly List<ContainerRegistration> _registrations;
+        private readonly List<IContainerRegistration> _registrations;
         private readonly AutofacResolver _resolver = new AutofacResolver();
 
-        public AutofacUmbracoRegister(IEnumerable<ContainerRegistration> registrations)
+        public AutofacUmbracoRegister(IEnumerable<IContainerRegistration> registrations)
         {
             if (registrations == null) throw new ArgumentNullException(nameof(registrations));
             _registrations = registrations.ToList();

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.IoC.Autofac", "Umbr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.IoC", "Umbraco.IoC\Umbraco.IoC.csproj", "{D30131B5-0C54-4CB2-A225-3E80ABAA0C3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.IoC.LightInject", "Umbraco.IoC.LightInject\Umbraco.IoC.LightInject.csproj", "{B0652D6F-E830-40E8-90DA-26A071867A8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D30131B5-0C54-4CB2-A225-3E80ABAA0C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D30131B5-0C54-4CB2-A225-3E80ABAA0C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D30131B5-0C54-4CB2-A225-3E80ABAA0C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0652D6F-E830-40E8-90DA-26A071867A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0652D6F-E830-40E8-90DA-26A071867A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0652D6F-E830-40E8-90DA-26A071867A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0652D6F-E830-40E8-90DA-26A071867A8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

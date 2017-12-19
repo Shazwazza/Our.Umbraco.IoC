@@ -52,8 +52,7 @@ namespace Umbraco.IoC.Autofac
             builder.RegisterModule<AutofacWebTypesModule>();
             
             //register umbraco types
-            builder.RegisterSource(new AutofacUmbracoRegister(CoreServices.GetContainerRegistrations()));
-            builder.RegisterSource(new AutofacUmbracoRegister(WebServices.GetContainerRegistrations()));
+            builder.RegisterSource(new AutofacUmbracoRegister(UmbracoServices.GetAllRegistrations()));
 
             //register umbraco MVC + webapi controllers used by the admin site
             builder.RegisterControllers(typeof(UmbracoApplication).Assembly);

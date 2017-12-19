@@ -332,6 +332,10 @@
       <Project>{ee4f9a3c-8660-459b-bb2d-f097ac416ca0}</Project>
       <Name>Umbraco.IoC.Autofac</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Umbraco.IoC.LightInject\Umbraco.IoC.LightInject.csproj">
+      <Project>{b0652d6f-e830-40e8-90da-26a071867a8f}</Project>
+      <Name>Umbraco.IoC.LightInject</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
