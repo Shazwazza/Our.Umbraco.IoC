@@ -333,3 +333,6 @@ ASALocalRun/
 # ImageProcessor DiskCache 
 **/App_Data/cache/
 /src/Our.Umbraco.IoC.WebTest/App_Data/Models/*
+/build/vswhere.exe
+/build/tmp/*
+/build/nuget.exe

@@ -226,6 +226,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="ExternallyOwnedLifetime.cs" />
     <Compile Include="LightInjectStartup.cs" />
     <Compile Include="ContainerBuildingEventArgs.cs" />

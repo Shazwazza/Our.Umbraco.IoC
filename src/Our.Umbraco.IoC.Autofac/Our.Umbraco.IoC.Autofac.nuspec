@@ -1,22 +1,25 @@
 <?xml version="1.0"?>
-<package >
+<package>
     <metadata>
         <id>$id$</id>
         <version>$version$</version>
         <title>$title$</title>
-        <authors>$author$</authors>
-        <owners>$author$</owners>
+        <authors>Shannon Deminick</authors>
+        <owners>Shannon Deminick</owners>
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/Shazwazza/Our.Umbraco.IoC</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>$description$</description>
-        <copyright>Copyright $year$</copyright>
+        <description>A library for easy setup of IoC/Dependency injection for Umbraco with Autofac</description>
+        <copyright>$copyright$</copyright>
         <tags>Umbraco IoC DependencyInjection DI Autofac</tags>
-    </metadata>
-    <dependencies>
-        <dependency id="UmbracoCms.Core" version="7.7.0" />
-        <dependency id="Autofac" version="4.6.2" />
-        <dependency id="Autofac.Mvc5" version="4.0.2" />
-        <dependency id="Autofac.WebApi2" version="4.1.0" />
-    </dependencies>
+        <dependencies>
+            <dependency id="UmbracoCms.Core" version="7.7.0" />
+            <dependency id="Autofac" version="4.6.2" />
+            <dependency id="Autofac.Mvc5" version="4.0.2" />
+            <dependency id="Autofac.WebApi2" version="4.1.0" />
+        </dependencies>
+    </metadata>    
+    <files>
+        <file src="bin\Release\Our.Umbraco.IoC.Autofac.dll" target="lib/Our.Umbraco.IoC.Autofac.dll"/>
+    </files>
 </package>

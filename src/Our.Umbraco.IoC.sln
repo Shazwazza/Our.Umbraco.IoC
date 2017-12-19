@@ -11,6 +11,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.IoC", "Our.Umbr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.IoC.LightInject", "Our.Umbraco.IoC.LightInject\Our.Umbraco.IoC.LightInject.csproj", "{B0652D6F-E830-40E8-90DA-26A071867A8F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{7126A851-3295-4FD2-9A85-99C4AD1705A4}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{FA58A0EB-5C6F-443D-978F-51F6A55D4D96}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\build.ps1 = ..\build\build.ps1
+		..\build\build.xml = ..\build\build.xml
+		SolutionInfo.cs = SolutionInfo.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

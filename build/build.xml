@@ -1,0 +1,5 @@
+<build>
+    <project id="Our.Umbraco.IoC" version="1.0.0-beta"/>
+    <project id="Our.Umbraco.IoC.Autofac" version="1.0.0-beta"/>
+    <project id="Our.Umbraco.IoC.LightInject" version="1.0.0-beta"/>
+</build>

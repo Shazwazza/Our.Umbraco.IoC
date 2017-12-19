@@ -213,6 +213,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionInfo.cs">
+      <Link>Properties\SolutionInfo.cs</Link>
+    </Compile>
     <Compile Include="ContainerRegistration.cs" />
     <Compile Include="UmbracoServices.cs" />
     <Compile Include="IContainerRegistration.cs" />
