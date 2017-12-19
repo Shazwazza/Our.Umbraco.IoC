@@ -16,9 +16,21 @@ Then it depends on what container you want to use and what containers this packa
 
 	Install-Package Our.Umbraco.IoC.Autofac
 
+If you want to disable this container's support you can do so by setting this appSetting. If this appSetting doesn't exist, then the default value is 'true'
+
+```xml
+<add key="Our.Umbraco.IoC.Autofac.Enabled" value="false" />
+```
+
 ### LighInject support
 
 	Install-Package Our.Umbraco.IoC.LightInject
+
+If you want to disable this container's support you can do so by setting this appSetting. If this appSetting doesn't exist, then the default value is 'true'
+
+```xml
+<add key="Our.Umbraco.IoC.LightInject.Enabled" value="false" />
+```
 
 ## Contributing
 
