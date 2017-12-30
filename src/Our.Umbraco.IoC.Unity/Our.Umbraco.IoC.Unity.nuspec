@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>$id$</id>
+        <version>$version$</version>
+        <title>$title$</title>
+        <authors>Shannon Deminick, Gunnar Már Óttarsson</authors>
+        <owners>Shannon Deminick</owners>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/Shazwazza/Our.Umbraco.IoC</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A library for easy setup of IoC/Dependency injection for Umbraco with Unity</description>
+        <copyright>$copyright$</copyright>
+        <tags>Umbraco IoC DependencyInjection DI Unity</tags>
+        <dependencies>
+          <dependency id="Our.Umbraco.IoC" version="1.0.0-beta" />
+          <dependency id="UmbracoCms.Core" version="[7.7.0,8.0.0)" />
+          <dependency id="Unity.Abstractions" version="[3.1.1,4.0.0]"  />
+          <dependency id="Unity.AspNet.WebApi" version="[5.0.11,6.0.0]"  />
+          <dependency id="Unity.Container" version="[5.5.2,6.0.0]"  />
+          <dependency id="Unity.Mvc" version="[5.0.12,6.0.0]" />
+          <dependency id="WebActivatorEx" version="[2.2.0,3.0.0]" />
+        </dependencies>
+    </metadata>    
+    <files>
+        <file src="bin\Release\Our.Umbraco.IoC.Unity.dll" target="lib/Our.Umbraco.IoC.Unity.dll"/>
+    </files>
+</package>
