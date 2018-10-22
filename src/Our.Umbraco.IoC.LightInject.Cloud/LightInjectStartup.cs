@@ -51,7 +51,5 @@ namespace Our.Umbraco.IoC.LightInject.Cloud
             container.EnableMvc();
             container.EnableWebApi(GlobalConfiguration.Configuration);
         }
-
-        
     }
 }
