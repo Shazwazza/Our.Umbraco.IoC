@@ -1,7 +1,7 @@
 ﻿using System;
 using LightInject;
 
-namespace Our.Umbraco.IoC.LightInject.Cloud
+namespace Our.Umbraco.IoC.LightInject
 {
     /// <summary>
     /// Used if the lifetime shouldn't be managed by the container

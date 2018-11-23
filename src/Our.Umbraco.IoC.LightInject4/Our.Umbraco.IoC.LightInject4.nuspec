@@ -9,19 +9,19 @@
         <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
         <projectUrl>https://github.com/Shazwazza/Our.Umbraco.IoC</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>A library for easy setup of IoC/Dependency injection for Umbraco with LightInject on Umbraco Cloud</description>
+        <description>A library for easy setup of IoC/Dependency injection for Umbraco with LightInject (compatible with Umbraco Cloud)</description>
         <copyright>$copyright$</copyright>
         <tags>Umbraco IoC DependencyInjection DI LightInject</tags>
         <dependencies>
-            <dependency id="Our.Umbraco.IoC" version="1.0.0-beta" />
+            <dependency id="Our.Umbraco.IoC" version="1.0.0" />
             <dependency id="UmbracoCms.Core" version="[7.7.0,8.0.0)" />
             <dependency id="LightInject" version="[4.1.1,5.0.0)" />
             <dependency id="LightInject.Mvc" version="[1.1.0,2.0.0)" />
-            <dependency id="LightInject.Web" version="[2.0.0,3.0.0)" />
+            <dependency id="LightInject.Web" version="[1.1.0,2.0.0)" />
             <dependency id="LightInject.WebApi" version="[1.1.0,2.0.0)" />
         </dependencies>
     </metadata>
     <files>
-        <file src="bin\Release\Our.Umbraco.IoC.LightInject.Cloud.dll" target="lib/Our.Umbraco.IoC.LightInject.Cloud.dll"/>
+        <file src="bin\Release\Our.Umbraco.IoC.LightInject.4.dll" target="lib/Our.Umbraco.IoC.LightInject.4.dll"/>
     </files>
 </package>

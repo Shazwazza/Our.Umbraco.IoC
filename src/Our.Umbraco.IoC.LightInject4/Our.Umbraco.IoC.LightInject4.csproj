@@ -7,8 +7,8 @@
     <ProjectGuid>{FC31DB53-EE45-462B-9315-07FA26C3F2EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Our.Umbraco.IoC.LightInject.Cloud</RootNamespace>
-    <AssemblyName>Our.Umbraco.IoC.LightInject.Cloud</AssemblyName>
+    <RootNamespace>Our.Umbraco.IoC.LightInject</RootNamespace>
+    <AssemblyName>Our.Umbraco.IoC.LightInject.4</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -239,7 +239,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Our.Umbraco.IoC.LightInject.Cloud.nuspec" />
+    <None Include="Our.Umbraco.IoC.LightInject4.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

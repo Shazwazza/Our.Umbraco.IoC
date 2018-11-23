@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{FA58A0EB
 		SolutionInfo.cs = SolutionInfo.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.IoC.LightInject.Cloud", "Our.Umbraco.IoC.LightInject.Cloud\Our.Umbraco.IoC.LightInject.Cloud.csproj", "{FC31DB53-EE45-462B-9315-07FA26C3F2EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.IoC.LightInject4", "Our.Umbraco.IoC.LightInject4\Our.Umbraco.IoC.LightInject4.csproj", "{FC31DB53-EE45-462B-9315-07FA26C3F2EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,7 @@
 using LightInject;
 using Umbraco.Core;
 
-namespace Our.Umbraco.IoC.LightInject.Cloud
+namespace Our.Umbraco.IoC.LightInject
 {
     public class ContainerBuildingEventArgs : EventArgs
     {

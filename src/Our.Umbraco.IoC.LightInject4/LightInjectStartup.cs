@@ -5,7 +5,7 @@ using LightInject;
 using Umbraco.Core;
 using Umbraco.Web;
 
-namespace Our.Umbraco.IoC.LightInject.Cloud
+namespace Our.Umbraco.IoC.LightInject
 {
     public class LightInjectStartup : IApplicationEventHandler
     {
@@ -27,7 +27,7 @@ namespace Our.Umbraco.IoC.LightInject.Cloud
         public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
             //If this flag exists and it's not 'true' then this container will be disabled.
-            if (ConfigurationManager.AppSettings["Our.Umbraco.IoC.LightInject.Cloud.Enabled"] != null && ConfigurationManager.AppSettings["Our.Umbraco.IoC.LightInject.Cloud.Enabled"] != "true")
+            if (ConfigurationManager.AppSettings["Our.Umbraco.IoC.LightInject.Enabled"] != null && ConfigurationManager.AppSettings["Our.Umbraco.IoC.LightInject.Enabled"] != "true")
                 return;
 
             var container = new ServiceContainer();

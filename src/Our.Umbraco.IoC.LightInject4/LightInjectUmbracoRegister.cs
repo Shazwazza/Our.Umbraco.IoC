@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using LightInject;
 
-namespace Our.Umbraco.IoC.LightInject.Cloud
+namespace Our.Umbraco.IoC.LightInject
 {
     public class LightInjectUmbracoRegister : ICompositionRoot
     {

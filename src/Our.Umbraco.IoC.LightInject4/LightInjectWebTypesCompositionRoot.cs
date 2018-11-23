@@ -3,7 +3,7 @@ using System.Web.Hosting;
 using System.Web.Routing;
 using LightInject;
 
-namespace Our.Umbraco.IoC.LightInject.Cloud
+namespace Our.Umbraco.IoC.LightInject
 {
     /// <summary>
     /// Used to register the common web types for LightInject
