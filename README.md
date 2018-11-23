@@ -37,12 +37,12 @@ If you want to disable this container's support you can do so by setting this ap
 This version is identical in functionality to the above `LightInject` implementation, however since Umbraco Cloud currently has a hard dependency on `LightInject 4.1.1`
 this version is created to accommodate that.
 
-	Install-Package Our.Umbraco.IoC.LightInject.Cloud
+	Install-Package Our.Umbraco.IoC.LightInject4
 
 If you want to disable this container's support you can do so by setting this appSetting. If this appSetting doesn't exist, then the default value is 'true'
 
 ```xml
-<add key="Our.Umbraco.IoC.LightInject.Cloud.Enabled" value="false" />
+<add key="Our.Umbraco.IoC.LightInject.Enabled" value="false" />
 ```
 
 
