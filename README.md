@@ -34,8 +34,7 @@ If you want to disable this container's support you can do so by setting this ap
 
 #### LightInject support on Umbraco Cloud
 
-This version is identical in functionality to the above `LightInject` implementation, however since Umbraco Cloud currently has a hard dependency on `LightInject 4.1.1`
-this version is created to accommodate that.
+This version is identical in functionality to the above `LightInject` implementation, however because Umbraco Cloud runs with Umbraco Deploy which has a dependency on `LightInject 4.x` this version is created to accommodate that.
 
 	Install-Package Our.Umbraco.IoC.LightInject4
 
