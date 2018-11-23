@@ -51,45 +51,45 @@ namespace Our.Umbraco.IoC
                 new ContainerRegistration<IHealthChecks>(x => UmbracoConfig.For.HealthCheck()),
             };
 
-            defs.AddRange(GetGranularUmbracoServiceRegistrations());
+            defs.AddRange(GetUmbracoServiceRegistrations());
 
             return defs;
         }
 
-        private static IEnumerable<IContainerRegistration> GetGranularUmbracoServiceRegistrations()
+        private static IEnumerable<IContainerRegistration> GetUmbracoServiceRegistrations()
         {
             var defs = new List<ContainerRegistration>
             {
-                new ContainerRegistration<IMigrationEntryService>(x => x.Resolve<ServiceContext>().MigrationEntryService),
-                new ContainerRegistration<IPublicAccessService>(x => x.Resolve<ServiceContext>().PublicAccessService),
-                new ContainerRegistration<ITaskService>(x => x.Resolve<ServiceContext>().TaskService),
-                new ContainerRegistration<IDomainService>(x => x.Resolve<ServiceContext>().DomainService),
-                new ContainerRegistration<IAuditService>(x => x.Resolve<ServiceContext>().AuditService),
-                new ContainerRegistration<ILocalizedTextService>(x => x.Resolve<ServiceContext>().TextService),
-                new ContainerRegistration<ITagService>(x => x.Resolve<ServiceContext>().TagService),
-                new ContainerRegistration<IContentService>(x => x.Resolve<ServiceContext>().ContentService),
-                new ContainerRegistration<IUserService>(x => x.Resolve<ServiceContext>().UserService),
-                new ContainerRegistration<IMemberService>(x => x.Resolve<ServiceContext>().MemberService),
-                new ContainerRegistration<IMediaService>(x => x.Resolve<ServiceContext>().MediaService),
-                new ContainerRegistration<IContentTypeService>(x => x.Resolve<ServiceContext>().ContentTypeService),
-                new ContainerRegistration<IDataTypeService>(x => x.Resolve<ServiceContext>().DataTypeService),
-                new ContainerRegistration<IFileService>(x => x.Resolve<ServiceContext>().FileService),
-                new ContainerRegistration<ILocalizationService>(x => x.Resolve<ServiceContext>().LocalizationService),
-                new ContainerRegistration<IPackagingService>(x => x.Resolve<ServiceContext>().PackagingService),
-                new ContainerRegistration<IServerRegistrationService>(x => x.Resolve<ServiceContext>().ServerRegistrationService),
-                new ContainerRegistration<IEntityService>(x => x.Resolve<ServiceContext>().EntityService),
-                new ContainerRegistration<IRelationService>(x => x.Resolve<ServiceContext>().RelationService),
-                new ContainerRegistration<IApplicationTreeService>(x => x.Resolve<ServiceContext>().ApplicationTreeService),
-                new ContainerRegistration<ISectionService>(x => x.Resolve<ServiceContext>().SectionService),
-                new ContainerRegistration<IMacroService>(x => x.Resolve<ServiceContext>().MacroService),
-                new ContainerRegistration<IMemberTypeService>(x => x.Resolve<ServiceContext>().MemberTypeService),
-                new ContainerRegistration<IMemberGroupService>(x => x.Resolve<ServiceContext>().MemberGroupService),
-                new ContainerRegistration<INotificationService>(x => x.Resolve<ServiceContext>().NotificationService),
-                new ContainerRegistration<IExternalLoginService>(x => x.Resolve<ServiceContext>().ExternalLoginService),
-                new ContainerRegistration<IRedirectUrlService>(x => x.Resolve<ServiceContext>().RedirectUrlService),
+                new ContainerRegistration<IMigrationEntryService>(x => ApplicationContext.Current.Services.MigrationEntryService),
+                new ContainerRegistration<IPublicAccessService>(x => ApplicationContext.Current.Services.PublicAccessService),
+                new ContainerRegistration<ITaskService>(x => ApplicationContext.Current.Services.TaskService),
+                new ContainerRegistration<IDomainService>(x => ApplicationContext.Current.Services.DomainService),
+                new ContainerRegistration<IAuditService>(x => ApplicationContext.Current.Services.AuditService),
+                new ContainerRegistration<ILocalizedTextService>(x => ApplicationContext.Current.Services.TextService),
+                new ContainerRegistration<ITagService>(x => ApplicationContext.Current.Services.TagService),
+                new ContainerRegistration<IContentService>(x => ApplicationContext.Current.Services.ContentService),
+                new ContainerRegistration<IUserService>(x => ApplicationContext.Current.Services.UserService),
+                new ContainerRegistration<IMemberService>(x => ApplicationContext.Current.Services.MemberService),
+                new ContainerRegistration<IMediaService>(x => ApplicationContext.Current.Services.MediaService),
+                new ContainerRegistration<IContentTypeService>(x => ApplicationContext.Current.Services.ContentTypeService),
+                new ContainerRegistration<IDataTypeService>(x => ApplicationContext.Current.Services.DataTypeService),
+                new ContainerRegistration<IFileService>(x => ApplicationContext.Current.Services.FileService),
+                new ContainerRegistration<ILocalizationService>(x => ApplicationContext.Current.Services.LocalizationService),
+                new ContainerRegistration<IPackagingService>(x => ApplicationContext.Current.Services.PackagingService),
+                new ContainerRegistration<IServerRegistrationService>(x => ApplicationContext.Current.Services.ServerRegistrationService),
+                new ContainerRegistration<IEntityService>(x => ApplicationContext.Current.Services.EntityService),
+                new ContainerRegistration<IRelationService>(x => ApplicationContext.Current.Services.RelationService),
+                new ContainerRegistration<IApplicationTreeService>(x => ApplicationContext.Current.Services.ApplicationTreeService),
+                new ContainerRegistration<ISectionService>(x => ApplicationContext.Current.Services.SectionService),
+                new ContainerRegistration<IMacroService>(x => ApplicationContext.Current.Services.MacroService),
+                new ContainerRegistration<IMemberTypeService>(x => ApplicationContext.Current.Services.MemberTypeService),
+                new ContainerRegistration<IMemberGroupService>(x => ApplicationContext.Current.Services.MemberGroupService),
+                new ContainerRegistration<INotificationService>(x => ApplicationContext.Current.Services.NotificationService),
+                new ContainerRegistration<IExternalLoginService>(x => ApplicationContext.Current.Services.ExternalLoginService),
+                new ContainerRegistration<IRedirectUrlService>(x => ApplicationContext.Current.Services.RedirectUrlService),
 
                 // TODO: Uncomment when Umbraco.Core updated
-                //new ContainerRegistration<IConsentService>(x => x.Resolve<ServiceContext>().ConsentService),
+                //new ContainerRegistration<IConsentService>(x => ApplicationContext.Current.Services.ConsentService),
             };
 
             return defs;
