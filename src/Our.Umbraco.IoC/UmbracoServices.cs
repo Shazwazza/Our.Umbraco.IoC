@@ -50,6 +50,48 @@ namespace Our.Umbraco.IoC
                 new ContainerRegistration<DatabaseContext>(x => ApplicationContext.Current.DatabaseContext),
                 new ContainerRegistration<IHealthChecks>(x => UmbracoConfig.For.HealthCheck()),
             };
+
+            defs.AddRange(GetUmbracoServiceRegistrations());
+
+            return defs;
+        }
+
+        private static IEnumerable<IContainerRegistration> GetUmbracoServiceRegistrations()
+        {
+            var defs = new List<ContainerRegistration>
+            {
+                new ContainerRegistration<IMigrationEntryService>(x => ApplicationContext.Current.Services.MigrationEntryService),
+                new ContainerRegistration<IPublicAccessService>(x => ApplicationContext.Current.Services.PublicAccessService),
+                new ContainerRegistration<ITaskService>(x => ApplicationContext.Current.Services.TaskService),
+                new ContainerRegistration<IDomainService>(x => ApplicationContext.Current.Services.DomainService),
+                new ContainerRegistration<IAuditService>(x => ApplicationContext.Current.Services.AuditService),
+                new ContainerRegistration<ILocalizedTextService>(x => ApplicationContext.Current.Services.TextService),
+                new ContainerRegistration<ITagService>(x => ApplicationContext.Current.Services.TagService),
+                new ContainerRegistration<IContentService>(x => ApplicationContext.Current.Services.ContentService),
+                new ContainerRegistration<IUserService>(x => ApplicationContext.Current.Services.UserService),
+                new ContainerRegistration<IMemberService>(x => ApplicationContext.Current.Services.MemberService),
+                new ContainerRegistration<IMediaService>(x => ApplicationContext.Current.Services.MediaService),
+                new ContainerRegistration<IContentTypeService>(x => ApplicationContext.Current.Services.ContentTypeService),
+                new ContainerRegistration<IDataTypeService>(x => ApplicationContext.Current.Services.DataTypeService),
+                new ContainerRegistration<IFileService>(x => ApplicationContext.Current.Services.FileService),
+                new ContainerRegistration<ILocalizationService>(x => ApplicationContext.Current.Services.LocalizationService),
+                new ContainerRegistration<IPackagingService>(x => ApplicationContext.Current.Services.PackagingService),
+                new ContainerRegistration<IServerRegistrationService>(x => ApplicationContext.Current.Services.ServerRegistrationService),
+                new ContainerRegistration<IEntityService>(x => ApplicationContext.Current.Services.EntityService),
+                new ContainerRegistration<IRelationService>(x => ApplicationContext.Current.Services.RelationService),
+                new ContainerRegistration<IApplicationTreeService>(x => ApplicationContext.Current.Services.ApplicationTreeService),
+                new ContainerRegistration<ISectionService>(x => ApplicationContext.Current.Services.SectionService),
+                new ContainerRegistration<IMacroService>(x => ApplicationContext.Current.Services.MacroService),
+                new ContainerRegistration<IMemberTypeService>(x => ApplicationContext.Current.Services.MemberTypeService),
+                new ContainerRegistration<IMemberGroupService>(x => ApplicationContext.Current.Services.MemberGroupService),
+                new ContainerRegistration<INotificationService>(x => ApplicationContext.Current.Services.NotificationService),
+                new ContainerRegistration<IExternalLoginService>(x => ApplicationContext.Current.Services.ExternalLoginService),
+                new ContainerRegistration<IRedirectUrlService>(x => ApplicationContext.Current.Services.RedirectUrlService),
+
+                // TODO: Uncomment when Umbraco.Core updated
+                //new ContainerRegistration<IConsentService>(x => ApplicationContext.Current.Services.ConsentService),
+            };
+
             return defs;
         }
     }
