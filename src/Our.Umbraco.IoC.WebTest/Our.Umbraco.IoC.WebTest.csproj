@@ -332,7 +332,7 @@
       <Project>{ee4f9a3c-8660-459b-bb2d-f097ac416ca0}</Project>
       <Name>Our.Umbraco.IoC.Autofac</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Our.Umbraco.IoC.LightInject.4\Our.Umbraco.IoC.LightInject4.csproj">
+    <ProjectReference Include="..\Our.Umbraco.IoC.LightInject4\Our.Umbraco.IoC.LightInject4.csproj">
       <Project>{fc31db53-ee45-462b-9315-07fa26c3f2eb}</Project>
       <Name>Our.Umbraco.IoC.LightInject4</Name>
     </ProjectReference>

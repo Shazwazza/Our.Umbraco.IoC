@@ -13,7 +13,7 @@
         <copyright>$copyright$</copyright>
         <tags>Umbraco IoC DependencyInjection DI Unity</tags>
         <dependencies>
-          <dependency id="Our.Umbraco.IoC" version="1.0.0-beta" />
+          <dependency id="Our.Umbraco.IoC" version="1.0.0" />
           <dependency id="UmbracoCms.Core" version="[7.7.0,8.0.0)" />
           <dependency id="Unity.Abstractions" version="[3.1.1,4.0.0]"  />
           <dependency id="Unity.AspNet.WebApi" version="[5.0.11,6.0.0]"  />

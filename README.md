@@ -22,6 +22,16 @@ If you want to disable this container's support you can do so by setting this ap
 <add key="Our.Umbraco.IoC.Autofac.Enabled" value="false" />
 ```
 
+### Unity support
+
+	Install-Package Our.Umbraco.IoC.Unity
+
+If you want to disable this container's support you can do so by setting this appSetting. If this appSetting doesn't exist, then the default value is 'true'
+
+```xml
+<add key="Our.Umbraco.IoC.Unity.Enabled" value="false" />
+```
+
 ### LighInject support
 
 	Install-Package Our.Umbraco.IoC.LightInject
@@ -32,7 +42,7 @@ If you want to disable this container's support you can do so by setting this ap
 <add key="Our.Umbraco.IoC.LightInject.Enabled" value="false" />
 ```
 
-#### LightInject support on Umbraco Cloud
+#### LightInject support on Umbraco Cloud (with v7.x)
 
 This version is identical in functionality to the above `LightInject` implementation, however because Umbraco Cloud runs with Umbraco Deploy which has a dependency on `LightInject 4.x` this version is created to accommodate that.
 

@@ -3,4 +3,5 @@
     <project id="Our.Umbraco.IoC.Autofac" version="1.0.0"/>
     <project id="Our.Umbraco.IoC.LightInject" version="1.0.0"/>
     <project id="Our.Umbraco.IoC.LightInject4" version="1.0.0"/>
+    <project id="Our.Umbraco.IoC.Unity" version="1.0.0"/>
 </build>
