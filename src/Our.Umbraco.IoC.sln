@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.IoC.WebTest", "Our.Umbraco.IoC.WebTest\Our.Umbraco.IoC.WebTest.csproj", "{2EEE5B5F-60E4-46FE-96D6-2D0AF3E50FAD}"
 EndProject
@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{FA58A0EB
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.IoC.LightInject4", "Our.Umbraco.IoC.LightInject4\Our.Umbraco.IoC.LightInject4.csproj", "{FC31DB53-EE45-462B-9315-07FA26C3F2EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.IoC.Unity", "Our.Umbraco.IoC.Unity\Our.Umbraco.IoC.Unity.csproj", "{F4BCEF57-D867-43EE-90DA-7EE849BF11B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{FC31DB53-EE45-462B-9315-07FA26C3F2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC31DB53-EE45-462B-9315-07FA26C3F2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC31DB53-EE45-462B-9315-07FA26C3F2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4BCEF57-D867-43EE-90DA-7EE849BF11B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4BCEF57-D867-43EE-90DA-7EE849BF11B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4BCEF57-D867-43EE-90DA-7EE849BF11B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4BCEF57-D867-43EE-90DA-7EE849BF11B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
