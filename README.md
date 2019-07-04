@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/t04tla7g6k89oq6k?svg=true)](https://ci.appveyor.com/project/Shandem/our-umbraco-ioc)
+
 # Our.Umbraco.IoC
 
 A project containing various dependency injection containers for Umbraco
