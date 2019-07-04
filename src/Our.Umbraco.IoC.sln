@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.IoC.WebTest", "Our.Umbraco.IoC.WebTest\Our.Umbraco.IoC.WebTest.csproj", "{2EEE5B5F-60E4-46FE-96D6-2D0AF3E50FAD}"
 EndProject
@@ -20,6 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{7126A851-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{FA58A0EB-5C6F-443D-978F-51F6A55D4D96}"
 	ProjectSection(SolutionItems) = preProject
+		..\appveyor.build.yml = ..\appveyor.build.yml
 		..\build\build.ps1 = ..\build\build.ps1
 		..\build\build.xml = ..\build\build.xml
 		SolutionInfo.cs = SolutionInfo.cs
