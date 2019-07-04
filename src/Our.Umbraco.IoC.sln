@@ -21,6 +21,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{FA58A0EB-5C6F-443D-978F-51F6A55D4D96}"
 	ProjectSection(SolutionItems) = preProject
 		..\appveyor.build.yml = ..\appveyor.build.yml
+		..\appveyor.yml = ..\appveyor.yml
 		..\build\build.ps1 = ..\build\build.ps1
 		..\build\build.xml = ..\build\build.xml
 		SolutionInfo.cs = SolutionInfo.cs
