@@ -321,6 +321,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -336,6 +338,13 @@
       <Project>{fc31db53-ee45-462b-9315-07fa26c3f2eb}</Project>
       <Name>Our.Umbraco.IoC.LightInject4</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Our.Umbraco.IoC.Unity\Our.Umbraco.IoC.Unity.csproj">
+      <Project>{f4bcef57-d867-43ee-90da-7ee849bf11b0}</Project>
+      <Name>Our.Umbraco.IoC.Unity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Test\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -3,6 +3,7 @@ using System.Configuration;
 using System.Web.Http;
 using System.Web.Mvc;
 using Umbraco.Core;
+using Umbraco.Web;
 using Umbraco.Web.Editors;
 using Umbraco.Web.HealthCheck;
 using Umbraco.Web.Trees;
@@ -35,16 +36,21 @@ namespace Our.Umbraco.IoC.Unity
                 return;
 
             var container = UnityConfig.GetConfiguredContainer();
+
+            //register ASP.NET System types
             container.RegisterWebTypes();
 
-            ////register umbraco types
+            //register umbraco types
             var umbracoRegistrations = new UnityUmbracoRegister(container, UmbracoServices.GetAllRegistrations());
             umbracoRegistrations.RegisterTypes();
 
-            ////Raise event so people can modify the container
+            //it is NOT necessary to register your controllers for Unity!
+            //see https://code.msdn.microsoft.com/Dependency-Injection-in-11d54863
+
+            //Raise event so people can modify the container
             OnContainerBuilding(new ContainerBuildingEventArgs(container, applicationContext, umbracoApplication));
 
-            ////set dependency resolvers for both webapi and mvc
+            //set dependency resolvers for both webapi and mvc
             GlobalConfiguration.Configuration.DependencyResolver = new global::Unity.AspNet.WebApi.UnityDependencyResolver(container);
             DependencyResolver.SetResolver(new global::Unity.AspNet.Mvc.UnityDependencyResolver(container));
         }
