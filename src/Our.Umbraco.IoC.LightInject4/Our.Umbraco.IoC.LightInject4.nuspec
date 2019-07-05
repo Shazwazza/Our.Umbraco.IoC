@@ -13,7 +13,7 @@
         <copyright>$copyright$</copyright>
         <tags>Umbraco IoC DependencyInjection DI LightInject</tags>
         <dependencies>
-            <dependency id="Our.Umbraco.IoC" version="1.0.0" />
+            <dependency id="Our.Umbraco.IoC" version="[1.0.0,2.0.0)" />
             <dependency id="UmbracoCms.Core" version="[7.7.0,8.0.0)" />
             <dependency id="LightInject" version="[4.1.1,5.0.0)" />
             <dependency id="LightInject.Mvc" version="[1.1.0,2.0.0)" />

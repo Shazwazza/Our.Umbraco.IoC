@@ -13,8 +13,8 @@ namespace Our.Umbraco.IoC.Unity
     /// </summary>
     class UnityUmbracoRegister
     {
-        IUnityContainer _container;
-        IEnumerable<IContainerRegistration> _registrations;
+        readonly IUnityContainer _container;
+        readonly IEnumerable<IContainerRegistration> _registrations;
 
         private readonly UnityResolver _resolver = new UnityResolver();
 
@@ -30,7 +30,7 @@ namespace Our.Umbraco.IoC.Unity
             _registrations = registrations.ToList();
         }
 
-        private static LifetimeManager GetLifetime(IContainerRegistration reg)
+        private static IFactoryLifetimeManager GetFactoryLifetime(IContainerRegistration reg)
         {
             return reg.Lifetime == Lifetime.Transient
                 ? new TransientLifetimeManager()
@@ -38,7 +38,18 @@ namespace Our.Umbraco.IoC.Unity
                     ? new ExternallyControlledLifetimeManager()
                     : reg.Lifetime == Lifetime.Request
                         ? new PerRequestLifetimeManager()
-                        : (LifetimeManager)new TransientLifetimeManager();
+                        : (IFactoryLifetimeManager)new TransientLifetimeManager();
+        }
+
+        private static ITypeLifetimeManager GetLifetime(IContainerRegistration reg)
+        {
+            return reg.Lifetime == Lifetime.Transient
+                ? new TransientLifetimeManager()
+                : reg.Lifetime == Lifetime.ExternallyOwned
+                    ? new ExternallyControlledLifetimeManager()
+                    : reg.Lifetime == Lifetime.Request
+                        ? new PerRequestLifetimeManager()
+                        : (ITypeLifetimeManager)new TransientLifetimeManager();
         }
 
         public void RegisterTypes()
@@ -47,7 +58,7 @@ namespace Our.Umbraco.IoC.Unity
             {
                 if (registration is IActivatorContainerRegistration activatorRegistration)
                 {
-                    _container.RegisterType(registration.Type, GetLifetime(registration), new InjectionFactory(c => activatorRegistration.Activator(_resolver.WithContext(c))));
+                    _container.RegisterFactory(registration.Type, c => activatorRegistration.Activator(_resolver.WithContext(c)), GetFactoryLifetime(registration));
                 }
                 else
                 {
