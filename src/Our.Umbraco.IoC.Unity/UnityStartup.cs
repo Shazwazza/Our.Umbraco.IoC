@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Configuration;
+using System.Linq;
 using System.Web.Hosting;
 using System.Web.Http;
 using System.Web.Mvc;
 using Umbraco.Core;
 using Unity;
-
+using Unity.AspNet.Mvc;
 
 namespace Our.Umbraco.IoC.Unity
 {
@@ -54,6 +55,9 @@ namespace Our.Umbraco.IoC.Unity
             GlobalConfiguration.Configuration.DependencyResolver = new global::Unity.AspNet.WebApi.UnityDependencyResolver(container);
             DependencyResolver.SetResolver(new global::Unity.AspNet.Mvc.UnityDependencyResolver(container));
 
+            //custom MVC requirements for unity
+            FilterProviders.Providers.Remove(FilterProviders.Providers.OfType<FilterAttributeFilterProvider>().First());
+            FilterProviders.Providers.Add(new UnityFilterAttributeFilterProvider(container));
         }
 
         /// <summary>
