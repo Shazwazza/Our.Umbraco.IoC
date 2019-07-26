@@ -2,7 +2,7 @@
 
 # Our.Umbraco.IoC
 
-A project containing various dependency injection containers for Umbraco
+The fastest and easiest way to add Dependency Injection to your Umbraco 7.x project with support for various container types.
 
 ## Installation
 
