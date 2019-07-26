@@ -2,7 +2,7 @@
 
 # Our.Umbraco.IoC
 
-The fastest and easiest way to add Dependency Injection to your Umbraco 7.x project with support for various container types.
+The fastest and easiest way to add Dependency Injection support to your Umbraco 7.x project with support for various container types.
 
 ## Installation
 
