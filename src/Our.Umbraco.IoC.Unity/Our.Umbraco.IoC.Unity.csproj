@@ -233,7 +233,6 @@
       <Link>Properties\SolutionInfo.cs</Link>
     </Compile>
     <Compile Include="UnityActivator.cs" />
-    <Compile Include="UnityConfig.cs" />
     <Compile Include="UnityResolver.cs" />
     <Compile Include="UnityStartup.cs" />
     <Compile Include="UnityUmbracoRegister.cs" />

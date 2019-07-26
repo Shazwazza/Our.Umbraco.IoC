@@ -14,7 +14,7 @@
         <tags>Umbraco IoC DependencyInjection DI Unity</tags>
         <dependencies>
           <dependency id="Our.Umbraco.IoC" version="[1.0.0,2.0.0)" />
-          <dependency id="UmbracoCms.Core" version="[7.14.0,8.0.0)" />
+          <dependency id="UmbracoCms.Core" version="[7.15.0,8.0.0)" />
           <dependency id="Unity.AspNet.WebApi" version="[5.11.1,6.0.0]"  />
           <dependency id="Unity.Mvc" version="[5.11.1,6.0.0]" />
         </dependencies>

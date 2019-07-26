@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Configuration;
+using System.Web.Hosting;
 using System.Web.Http;
 using System.Web.Mvc;
 using Umbraco.Core;
-using Umbraco.Web;
-using Umbraco.Web.Editors;
-using Umbraco.Web.HealthCheck;
-using Umbraco.Web.Trees;
 using Unity;
-using Unity.Injection;
+
 
 namespace Our.Umbraco.IoC.Unity
 {
@@ -31,11 +28,14 @@ namespace Our.Umbraco.IoC.Unity
 
         public void OnApplicationStarted(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
-            ////If this flag exists and it's not 'true' then this container will be disabled.
+            //If this flag exists and it's not 'true' then this container will be disabled.
             if (ConfigurationManager.AppSettings["Our.Umbraco.IoC.Unity.Enabled"] != null && ConfigurationManager.AppSettings["Our.Umbraco.IoC.Unity.Enabled"] != "true")
                 return;
 
-            var container = UnityConfig.GetConfiguredContainer();
+            var container = new UnityContainer();
+
+            //register for shutdown
+            HostingEnvironment.RegisterObject(new UnityShutdown(container));
 
             //register ASP.NET System types
             container.RegisterWebTypes();
@@ -53,6 +53,25 @@ namespace Our.Umbraco.IoC.Unity
             //set dependency resolvers for both webapi and mvc
             GlobalConfiguration.Configuration.DependencyResolver = new global::Unity.AspNet.WebApi.UnityDependencyResolver(container);
             DependencyResolver.SetResolver(new global::Unity.AspNet.Mvc.UnityDependencyResolver(container));
+
+        }
+
+        /// <summary>
+        /// Disposes the container when the application terminates
+        /// </summary>
+        private class UnityShutdown : IRegisteredObject
+        {
+            private IUnityContainer _container;
+
+            public UnityShutdown(IUnityContainer container)
+            {
+                _container = container;
+            }
+            public void Stop(bool immediate)
+            {
+                _container?.Dispose();
+                _container = null;
+            }
         }
     }
 }

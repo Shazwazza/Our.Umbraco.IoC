@@ -23,7 +23,7 @@ namespace Our.Umbraco.IoC.WebTest.Controllers
         // GET: Test
         public ActionResult Index()
         {
-            return Content($"Hello world. IsFrontEndUmbracoRequest = {_umbCtx.IsFrontEndUmbracoRequest}");
+            return Content($"Hello world. IsFrontEndUmbracoRequest = {_umbCtx.IsFrontEndUmbracoRequest}. Container Type: {DependencyResolver.Current.GetType()}");
         }
     }
 }
