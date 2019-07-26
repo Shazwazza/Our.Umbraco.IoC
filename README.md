@@ -28,6 +28,8 @@ If you want to disable this container's support you can do so by setting this ap
 
 	Install-Package Our.Umbraco.IoC.Unity
 
+**Important** The Unity nuget package will install some files in the /App_Start folder: `UnityConfig.cs`, `UnityMvcActivator.cs`, `UnityWebApiActivator.cs` and it is recommended to delete these files. These boilerplate files are used to configure a Unity container and manage startup/shutdown of the various Unity components, however this package `Our.Umbraco.IoC.Unity` does all of this boilerplate work for you and uses it's own Unity container. See the [Using the Container](https://github.com/Shazwazza/Our.Umbraco.IoC/wiki/Using-the-Container) docs for info on how to customize this container.
+
 If you want to disable this container's support you can do so by setting this appSetting. If this appSetting doesn't exist, then the default value is 'true'
 
 ```xml
@@ -59,7 +61,7 @@ If you want to disable this container's support you can do so by setting this ap
 
 ## Using the container
 
-I'll write this up soon but in the meantime you can see examples on this blog post: https://shazwazza.com/post/easily-setup-your-umbraco-installation-with-ioc-dependency-injection/
+Click [here for docs on using the container](https://github.com/Shazwazza/Our.Umbraco.IoC/wiki/Using-the-Container).
 
 ## Contributing
 
