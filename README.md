@@ -1,5 +1,8 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/t04tla7g6k89oq6k?svg=true)](https://ci.appveyor.com/project/Shandem/our-umbraco-ioc)
 
+---
+_❤️ If you use and like Our.Umbraco.IoC please consider [becoming a GitHub Sponsor](https://github.com/sponsors/Shazwazza/) ❤️_
+
 # Our.Umbraco.IoC
 
 The fastest and easiest way to add Dependency Injection support to your Umbraco 7.x project with support for various container types.
